@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gửi Nguyên · 20/10 💗</title>
+<meta name="description" content="Một món quà nhỏ cho ngày 20/10: thư tay, mèo, trò chơi và rất nhiều yêu thương." />
+<meta name="theme-color" content="#ffd7e6" />
+<meta property="og:title" content="Gửi Nguyên · 20/10 💗" />
+<meta property="og:description" content="Một chút hồng, một chút mèo, và rất nhiều yêu thương." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B1%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="brand-paw">🐾</span> Gửi Nguyên</a>
+    <nav class="nav-links" aria-label="Điều hướng">
+      <a href="#letter">Lá thư</a>
+      <a href="#gallery">Kỷ niệm</a>
+      <a href="#game">Trò chơi</a>
+      <a href="#gift">Món quà</a>
+    </nav>
+    <button id="musicBtn" class="music-btn" aria-pressed="false" title="Bật nhạc nền">
+      <span id="musicIcon">🎵</span><span class="music-label">Nhạc</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Ngày Phụ nữ Việt Nam · 20/10/2026</p>
+        <h1 class="hero-title">
+          <span class="h1-happy">Happy</span>
+          <span class="h1-date">20<span class="dot">·</span>10</span>
+        </h1>
+        <p class="hero-greet">Gửi <span class="name" data-name>Nguyên</span> của anh 💗</p>
+        <p class="hero-sub" id="typewriter" aria-live="polite">Chúc em luôn rạng rỡ như nắng sớm 🌸</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#letter">Mở thư của anh 💌</a>
+          <a class="btn ghost" href="#game">Chơi với mèo 🐾</a>
+        </div>
+        <p class="hero-note">Trang web này có mèo. Rất nhiều mèo. Và chỉ có một người được tặng.</p>
+      </div>
+
+      <div class="hero-art">
+        <div class="bubble" id="catBubble">Meo~ bấm vào tớ thử xem! 🐾</div>
+        <button class="cat-btn" id="cat" aria-label="Vuốt ve chú mèo Mun">
+          <svg class="cat-svg" viewBox="0 0 240 230" role="img" aria-label="Chú mèo Mun màu đen">
+            <defs>
+              <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3f2d40" />
+                <stop offset="1" stop-color="#221826" />
+              </linearGradient>
+              <linearGradient id="chest" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#4c3749" />
+                <stop offset="1" stop-color="#33242f" />
+              </linearGradient>
+              <linearGradient id="earIn" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffb7d1" />
+                <stop offset="1" stop-color="#ff8bb4" />
+              </linearGradient>
+            </defs>
+
+            <!-- tail -->
+            <g class="cat-tail">
+              <path d="M176 182 C214 178 220 132 198 112" fill="none" stroke="#ff9dbe" stroke-width="22" stroke-linecap="round" />
+              <path d="M176 182 C214 178 220 132 198 112" fill="none" stroke="#2c1f2e" stroke-width="15" stroke-linecap="round" />
+            </g>
+
+            <!-- body -->
+            <ellipse cx="120" cy="176" rx="60" ry="46" fill="url(#fur)" stroke="#ff9dbe" stroke-width="2.5" />
+            <ellipse cx="120" cy="183" rx="32" ry="28" fill="url(#chest)" />
+            <!-- paws -->
+            <ellipse cx="92" cy="206" rx="17" ry="11" fill="#33252f" stroke="#ff9dbe" stroke-width="2.5" />
+            <ellipse cx="148" cy="206" rx="17" ry="11" fill="#33252f" stroke="#ff9dbe" stroke-width="2.5" />
+            <circle cx="92" cy="206" r="2" fill="#ff9dbe" />
+            <circle cx="148" cy="206" r="2" fill="#ff9dbe" />
+
+            <!-- ears -->
+            <path d="M66 78 L60 30 L104 58 Z" fill="url(#fur)" stroke="#ff9dbe" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M174 78 L180 30 L136 58 Z" fill="url(#fur)" stroke="#ff9dbe" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M70 72 L68 46 L95 63 Z" fill="url(#earIn)" />
+            <path d="M170 72 L172 46 L145 63 Z" fill="url(#earIn)" />
+
+            <!-- head -->
+            <g class="cat-head">
+              <ellipse cx="120" cy="102" rx="62" ry="55" fill="url(#fur)" stroke="#ff9dbe" stroke-width="2.5" />
+
+              <!-- eyes vàng -->
+              <g class="eye eye-l" style="transform-origin: 98px 100px">
+                <ellipse cx="98" cy="100" rx="8" ry="9.5" fill="#ffcf7a" />
+                <ellipse class="pupil" cx="98" cy="100" rx="2.7" ry="7" fill="#1c1017" />
+                <circle cx="100.8" cy="96" r="2.6" fill="#fff" />
+              </g>
+              <g class="eye eye-r" style="transform-origin: 142px 100px">
+                <ellipse cx="142" cy="100" rx="8" ry="9.5" fill="#ffcf7a" />
+                <ellipse class="pupil" cx="142" cy="100" rx="2.7" ry="7" fill="#1c1017" />
+                <circle cx="144.8" cy="96" r="2.6" fill="#fff" />
+              </g>
+
+              <!-- blush -->
+              <ellipse cx="76" cy="114" rx="10" ry="6" fill="#ff7ea8" opacity=".55" />
+              <ellipse cx="164" cy="114" rx="10" ry="6" fill="#ff7ea8" opacity=".55" />
+
+              <!-- nose + mouth -->
+              <path d="M115 112 L125 112 L120 118 Z" fill="#ff9dbe" />
+              <path d="M120 118 C120 124 112 126 110 121" fill="none" stroke="#ffc2d8" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M120 118 C120 124 128 126 130 121" fill="none" stroke="#ffc2d8" stroke-width="2.4" stroke-linecap="round" />
+
+              <!-- whiskers -->
+              <g stroke="#f0b3c8" stroke-width="2" stroke-linecap="round">
+                <path d="M74 106 L46 101" /><path d="M74 114 L46 116" />
+                <path d="M166 106 L194 101" /><path d="M166 114 L194 116" />
+              </g>
+            </g>
+
+            <!-- collar -->
+            <path d="M84 146 Q120 160 156 146" fill="none" stroke="#ff7ea8" stroke-width="7" stroke-linecap="round" />
+            <circle cx="120" cy="156" r="7" fill="#ffcf7a" stroke="#ffb347" stroke-width="2" />
+          </svg>
+          <span class="cat-tag">Mun</span>
+        </button>
+        <p class="pet-count">Đã vuốt ve: <b id="petCount">0</b> lần</p>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#letter" aria-label="Cuộn xuống">cuộn xuống nhé<span>⌄</span></a>
+  </section>
+
+  <!-- ══════════════ LETTER ══════════════ -->
+  <section class="section" id="letter">
+    <div class="section-head">
+      <p class="eyebrow">Lá thư nhỏ</p>
+      <h2>Một chút lời anh muốn nói</h2>
+      <p class="section-sub">Bức thư này hơi dài, nhưng đọc hết thì sẽ có thưởng đó.</p>
+    </div>
+
+    <div class="envelope" id="envelope">
+      <button class="envelope-front" id="openLetter" aria-expanded="false" aria-controls="letterBody">
+        <span class="env-seal">💗</span>
+        <span class="env-title">Thư gửi <span data-name>Nguyên</span></span>
+        <span class="env-hint">Bấm để mở thư</span>
+        <span class="env-flap" aria-hidden="true"></span>
+      </button>
+
+      <div class="letter" id="letterBody">
+        <div class="letter-inner">
+          <div class="letter-paper">
+            <p class="letter-date">20 · 10 · 2026</p>
+            <p class="letter-open"><span data-name>Nguyên</span>,</p>
+            <p>Anh vốn không giỏi mấy lời hoa mỹ. Nên thay vì nói một câu thật dài, anh làm cho em một trang web nhỏ. Hơi vụng về, hơi nhiều mèo, nhưng là tất cả những gì anh nghĩ về em.</p>
+            <p>Cảm ơn em vì những buổi chiều bình thường bỗng thành đáng nhớ. Vì những lần em kiên nhẫn nghe anh kể chuyện, dù câu chuyện đó anh đã kể đến lần thứ ba. Vì cách em cười khi thấy mèo, và cả cách em giận — cũng rất đáng yêu.</p>
+            <p>Anh mong em luôn được tự do làm điều em thích, được khen khi em cố gắng, và được thương ngay cả những ngày em chẳng muốn cố gắng gì cả.</p>
+            <p>Hôm nay là 20/10. Nhưng anh sẽ cố để mỗi ngày của em đều có một chút 20/10 như hôm nay.</p>
+            <p class="letter-sign">Thương em,<br /><span class="sign-name">anh.</span></p>
+            <p class="letter-pS">P.S. Nếu em đang cười thì món quà coi như đã thành công rồi đó.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CARDS ══════════════ -->
+  <section class="section" id="cards">
+    <div class="section-head">
+      <p class="eyebrow">Vì sao anh thương em</p>
+      <h2>Sáu điều, trong rất nhiều điều</h2>
+      <p class="section-sub">Chạm vào từng tấm thẻ để lật xem.</p>
+    </div>
+
+    <div class="cards-grid">
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">🌷</span>
+            <h3>Nụ cười của em</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Có những hôm anh mệt, chỉ cần thấy em cười là mọi thứ nhẹ đi một nửa. Nửa còn lại là nhờ em cười thêm lần nữa.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">☕</span>
+            <h3>Cách em kể chuyện</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Em kể chuyện có duyên đến mức chuyện đi chợ cũng thành phim. Anh thích ngồi nghe em nói, kể cả khi đã buồn ngủ.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">🐾</span>
+            <h3>Tình yêu với mèo</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Em nhìn mèo bằng ánh mắt dịu nhất trên đời. Và anh hơi ghen với mấy con mèo đó, thật lòng.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">💪</span>
+            <h3>Sự kiên nhẫn</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Em kiên nhẫn với anh hơn anh xứng đáng được nhận. Anh vẫn đang học cách để bù lại điều đó mỗi ngày.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">🫂</span>
+            <h3>Những cái ôm</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Không cần nói gì, chỉ cần một cái ôm là hiểu. Anh đếm mấy cái ôm đó là tài sản lớn nhất của mình.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip-card" aria-pressed="false">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="card-emoji">🌸</span>
+            <h3>Và là chính em</h3>
+            <span class="flip-hint">chạm để mở</span>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Không cần hoàn hảo, không cần cố gắng nhiều. Phiên bản mộc nhất của em đã là điều anh muốn giữ rồi.</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">Dây ảnh kỷ niệm</p>
+      <h2>Chuyện của chúng mình</h2>
+      <p class="section-sub">Kéo ngang để xem hết. Bấm vào một tấm ảnh để mở lời nhắn phía sau.</p>
+    </div>
+
+    <div class="filmstrip-scroll">
+      <div class="filmstrip">
+
+        <button class="photo-card" data-full="assets/photos/01.jpg" data-title="Rừng xanh" data-caption="Nắm tay em đi qua một khu rừng nhỏ, anh chỉ ước con đường dài thêm chút nữa. Miễn là cuối đường vẫn có em.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/01.jpg" alt="Hai đứa nắm tay nhau trong rừng" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">01 · Rừng xanh</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/02.jpg" data-title="Trời xanh" data-caption="Hai đứa ngẩng lên nhìn trời. Anh không nhớ hôm đó trời xanh cỡ nào, chỉ nhớ em đứng ngay cạnh.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/02.jpg" alt="Hai đứa đứng dưới trời xanh" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">02 · Trời xanh</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/03.jpg" data-title="Pháo hoa biển" data-caption="Pháo hoa trên biển chỉ rực một lúc. Còn khoảnh khắc em tựa vào anh, anh muốn giữ lâu hơn thế.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/03.jpg" alt="Hai đứa xem pháo hoa trên biển" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">03 · Pháo hoa</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/04.jpg" data-title="Học bổng" data-caption="Ngày em nhận học bổng, anh tự hào đến mức muốn khoe với cả thế giới. Em xứng đáng với từng chút một.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/04.jpg" alt="Hai đứa trên sân khấu nhận học bổng" width="480" height="320" loading="lazy" />
+            <span class="photo-caption">04 · Học bổng</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/05.jpg" data-title="Phenikaa" data-caption="Cô gái Phenikaa đứng giữa sân khấu, tay mở ra như muốn ôm cả khán phòng. Anh ngồi dưới, thấy sáng cả một góc.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/05.jpg" alt="Em trong áo Phenikaa trước sân khấu" width="480" height="320" loading="lazy" />
+            <span class="photo-caption">05 · Phenikaa</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/06.jpg" data-title="Lễ kết nạp" data-caption="Ngày em đứng trên thảm đỏ, nghiêm trang và rạng rỡ. Anh chỉ biết đứng cạnh và cười như một đứa trẻ.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/06.jpg" alt="Hai đứa trong lễ kết nạp Đảng viên" width="480" height="320" loading="lazy" />
+            <span class="photo-caption">06 · Lễ kết nạp</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/07.jpg" data-title="Áo dài trắng" data-caption="Áo dài trắng, tay cầm quyết định, mắt cười. Tấm này anh phải xem lại ba lần vì tưởng mình chụp dư sáng.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/07.jpg" alt="Em trong áo dài trắng cầm giấy khen" width="480" height="720" loading="lazy" />
+            <span class="photo-caption">07 · Áo dài trắng</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/08.jpg" data-title="Biển chiều" data-caption="Biển chiều, tóc rối, mắt nheo vì nắng. Vậy mà vẫn là tấm ảnh anh thích nhất.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/08.jpg" alt="Em đứng trên bãi biển lúc chiều" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">08 · Biển chiều</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/09.jpg" data-title="Trong gương" data-caption="Một tấm selfie trong gương, không ai được báo trước. Đời thường của hai đứa, mà anh thấy đẹp nhất.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/09.jpg" alt="Hai đứa selfie trong gương" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">09 · Trong gương</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/10.jpg" data-title="Vườn nhỏ" data-caption="Em đứng giữa vườn cây, váy trắng, nắng vàng. Anh chỉ việc bấm máy và thấy mình may mắn.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/10.jpg" alt="Em đứng trong khu vườn nhiều cây" width="480" height="360" loading="lazy" />
+            <span class="photo-caption">10 · Vườn nhỏ</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/11.jpg" data-title="Bước đi" data-caption="Em bước đi trước, tóc bay trong gió. Anh lẽo đẽo theo sau, chụp vội mà vẫn đẹp.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/11.jpg" alt="Em bước đi trong vườn, nhìn từ phía sau" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">11 · Bước đi</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/12.jpg" data-title="Thông Zeo" data-caption="Thông Zeo, hoa tím, và em giơ tay chào nắng. Chuyến đi nhỏ mà anh nhớ mãi.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/12.jpg" alt="Em giơ tay chào bên vườn hoa tím" width="480" height="640" loading="lazy" />
+            <span class="photo-caption">12 · Thông Zeo</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/13.jpg" data-title="Cái nơ" data-caption="Em dán sticker cái nơ lên đầu rồi cười trộm sau bàn tay. Dễ thương kiểu không cần chuẩn bị gì cả.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/13.jpg" alt="Em cười với sticker cái nơ trên đầu" width="480" height="854" loading="lazy" />
+            <span class="photo-caption">13 · Cái nơ</span>
+          </span>
+        </button>
+
+        <button class="photo-card" data-full="assets/photos/14.jpg" data-title="Mũ mèo" data-caption="Em đội mũ mèo, làm mặt ngố. Anh thương cả những khoảnh khắc em chẳng cần xinh nhất.">
+          <span class="clip" aria-hidden="true"></span>
+          <span class="photo-frame">
+            <img src="assets/photos/thumbs/14.jpg" alt="Em đội mũ mèo và làm mặt ngố" width="480" height="854" loading="lazy" />
+            <span class="photo-caption">14 · Mũ mèo</span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+    <p class="strip-hint">← kéo ngang để xem thêm →</p>
+  </section>
+
+  <!-- ══════════════ GAME ══════════════ -->
+  <section class="section" id="game">
+    <div class="section-head">
+      <p class="eyebrow">Trò chơi nhỏ</p>
+      <h2>Hứng trái tim cho Mun</h2>
+      <p class="section-sub">Di chuyển chuột hoặc ngón tay để hứng trái tim. Được 10 điểm là mèo vui cả ngày.</p>
+    </div>
+
+    <div class="game-wrap">
+      <div class="game-hud">
+        <div class="hud-item"><span>Điểm</span><b id="score">0</b></div>
+        <div class="hud-item"><span>Thời gian</span><b id="timeLeft">25</b></div>
+        <div class="hud-item"><span>Kỷ lục</span><b id="best">0</b></div>
+      </div>
+
+      <div class="canvas-box" id="canvasBox">
+        <canvas id="gameCanvas" aria-label="Trò chơi hứng trái tim"></canvas>
+        <div class="game-overlay" id="gameOverlay">
+          <div class="overlay-card">
+            <h3 id="ovTitle">Sẵn sàng chưa? 🐱</h3>
+            <p id="ovText">Mun đang đứng dưới mưa trái tim. Giúp mèo hứng thật nhiều nhé!</p>
+            <button class="btn primary" id="startGame">Bắt đầu</button>
+          </div>
+        </div>
+      </div>
+      <p class="game-tip">Mẹo: đừng hứng mèo, mèo là người hứng. 🐾</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ GIFT ══════════════ -->
+  <section class="section" id="gift">
+    <div class="section-head">
+      <p class="eyebrow">Món quà bí mật</p>
+      <h2>Cào nhẹ để nhận quà</h2>
+      <p class="section-sub">Dùng chuột hoặc ngón tay cào lớp giấy bạc hồng bên dưới.</p>
+    </div>
+
+    <div class="scratch-box" id="scratchBox">
+      <div class="scratch-reveal">
+        <p class="eyebrow">Phiếu quà tặng · có giá trị 1 ngày</p>
+        <h3>Một buổi hẹn do em chọn</h3>
+        <p>Anh bao trọn từ đồ ăn, vé xem phim đến tiền gửi xe. Đổi lại: một cái ôm thật chặt và không được giận anh trên đường về.</p>
+        <p class="scratch-code">LOVE · 2026</p>
+      </div>
+      <canvas id="scratch" aria-label="Lớp bạc cào để mở quà"></canvas>
+    </div>
+  </section>
+
+  <!-- ══════════════ WISH ══════════════ -->
+  <section class="section wish-section" id="wish">
+    <div class="wish-card">
+      <p class="eyebrow">Dành riêng cho em</p>
+      <h2>Ấn nút, nhận một lời khen</h2>
+      <p class="compliment" id="compliment">Bấm thử đi, anh chuẩn bị sẵn mười lời rồi.</p>
+      <div class="wish-actions">
+        <button class="btn primary" id="complimentBtn">Khen em một câu 💗</button>
+        <button class="btn ghost" id="confettiBtn">Bắn pháo hoa 🎉</button>
+      </div>
+      <p class="wish-note">Không giới hạn số lần. Giống như lý do để thương em vậy.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-big">20 · 10 · 2026</p>
+  <p>Làm bằng 💗, một chú mèo tên Mun, và vài dòng code vụng về.</p>
+  <p class="footer-small">Gửi <span data-name>Nguyên</span> — người anh thương nhất.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" aria-hidden="true">
+  <div class="lb-backdrop" data-close></div>
+  <div class="lb-card">
+    <button class="lb-close" id="lbClose" aria-label="Đóng ảnh">✕</button>
+    <div class="lb-media">
+      <img id="lbImg" src="" alt="" />
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Ảnh trước">‹</button>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Ảnh sau">›</button>
+    </div>
+    <div class="lb-body">
+      <p class="lb-index" id="lbIndex">01 / 14</p>
+      <h3 id="lbTitle">Rừng xanh</h3>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
